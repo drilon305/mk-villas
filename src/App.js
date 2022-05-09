@@ -7,6 +7,7 @@ import React from "react";
 import Home from "./pages/home/Home";
 import List from "./pages/list/List";
 import Hotel from "./pages/hotel/Hotel";
+import './App.css'
 
 
 
