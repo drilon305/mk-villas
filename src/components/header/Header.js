@@ -1,8 +1,19 @@
-import { faBed,faPlane, faCar, faTaxi } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react';
+import { faBed,faPlane, faCar, faTaxi, faCalendarDays, faPerson } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './header.css'
+import { DateRange } from 'react-date-range';
 
 const Header = () => {
+
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: null,
+      key: 'selection'
+    }
+  ]);
+
   return (
     <div className='header'>
       <div className="headerContainer">
@@ -29,8 +40,25 @@ const Header = () => {
       </div>
       </div>
       <h1 className="headerTitle">A lifetime of discounts? It's Genius.</h1>
-      <p className="headerDescription">Get reward for your travels – unlock instant savings of 10% or more with a free Booking.com account</p>
+      <p className="headerDescription">Get reward for your travels - unlock instant savings of 10% or more with a free Booking.com account</p>
       <button className="headerBtn">Sign in / Register</button>
+      <div className="headerSearch">
+        <div className="headerSearchItem">
+        <FontAwesomeIcon icon={faBed} className='headerIcon' />
+        <input type='text' placeholder='Where are you going?' className='headerSearchInput' />
+        </div>
+        <div className="headerSearchItem">
+        <FontAwesomeIcon icon={faCalendarDays} className='headerIcon' />
+        <span className='headerSearchText'>date to date</span>
+        </div>
+        <div className="headerSearchItem">
+        <FontAwesomeIcon icon={faPerson} className='headerIcon' />
+        <span className='headerSearchText'>2 adults 2 children 1room</span>
+        </div>
+        <div className="headerSearchItem">
+        <button className="headerBtn">Search</button>
+        </div>
+      </div>
       </div>
     </div>
   )
