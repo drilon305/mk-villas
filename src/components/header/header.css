@@ -9,8 +9,12 @@
 .headerContainer {
     width: 100%;
     max-width: 1024px;
-    padding: 20px 0px 100px 0;
+    margin: 20px 0px 100px 0px;
 }
+
+.headerContainer.listMode {
+    margin: 20px 0px 0px 0px;
+  }
 
 .headerList {
     display: flex;
@@ -81,11 +85,13 @@
 .date {
     position: absolute;
     top: 50px;
+    z-index: 2;
 }
 
 .options {
     position: absolute;
     top: 50px;
+    z-index: 2;
     background-color: #fff;
     color: gray;
     -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
@@ -118,3 +124,4 @@
 .optionCounterButton:disabled {
     cursor: not-allowed;
 }
+
