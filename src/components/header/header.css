@@ -6,6 +6,14 @@
     position: relative;
 }
 
+.headerTitle {
+    font-size: 3rem;
+}
+
+.headerDescription {
+    font-size: 1.2rem;
+}
+
 .headerContainer {
     width: 100%;
     max-width: 1024px;
