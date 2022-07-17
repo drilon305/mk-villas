@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/standoli/static/css/main.c50b593a.css",
+    "main.js": "/standoli/static/js/main.93aa0c9e.js",
+    "index.html": "/standoli/index.html",
+    "main.c50b593a.css.map": "/standoli/static/css/main.c50b593a.css.map",
+    "main.93aa0c9e.js.map": "/standoli/static/js/main.93aa0c9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c50b593a.css",
+    "static/js/main.93aa0c9e.js"
+  ]
+}
